@@ -1,16 +1,18 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agentic Dating - Compatibility Check</title>
-  
+  <title>Agentic Dating - Demo Result</title>
+
   <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Custom Configuration & Styles -->
   <script>
     tailwind.config = {
@@ -47,7 +49,7 @@
       }
     }
   </script>
-  
+
   <style>
     /* Custom Scrollbar for JSON outputs */
     pre::-webkit-scrollbar {
@@ -65,18 +67,23 @@
     pre::-webkit-scrollbar-thumb:hover {
       background: rgba(236, 72, 153, 0.6);
     }
-    
+
     /* Neon Glow Effects */
     .neon-shadow {
       box-shadow: 0 0 20px rgba(217, 70, 239, 0.15), 0 0 40px rgba(236, 72, 153, 0.1);
     }
-    
+
     body {
       background-color: #0a0a0f;
       color: #e2e8f0;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-\[-10\%\]{bottom:-10%}.left-0{left:0px}.left-\[-10\%\]{left:-10%}.right-\[-10\%\]{right:-10%}.top-0{top:0px}.top-\[-10\%\]{top:-10%}.-z-10{z-index:-10}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mb-1{margin-bottom:0.25rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-\[40\%\]{height:40%}.h-full{height:100%}.h-10{height:2.5rem}.h-3{height:0.75rem}.h-5{height:1.25rem}.h-px{height:1px}.max-h-96{max-height:24rem}.max-h-\[600px\]{max-height:600px}.min-h-screen{min-height:100vh}.w-\[40\%\]{width:40%}.w-full{width:100%}.w-10{width:2.5rem}.w-3{width:0.75rem}.w-5{width:1.25rem}.max-w-2xl{max-width:42rem}.max-w-5xl{max-width:64rem}.max-w-4xl{max-width:56rem}.max-w-\[85\%\]{max-width:85%}.flex-1{flex:1 1 0%}@keyframes gradient-x{0%, 100%{background-size:200% 200%;background-position:left center}50%{background-size:200% 200%;background-position:right center}}.animate-gradient-x{animation:gradient-x 15s ease infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse-slow{animation:pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite}.animate-\[fadeIn_0\.5s_ease-out\]{animation:fadeIn 0.5s ease-out}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-xl{border-radius:0.75rem}.rounded-tl-sm{border-top-left-radius:0.125rem}.rounded-tr-sm{border-top-right-radius:0.125rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-brand-border{border-color:rgba(255, 255, 255, 0.08)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-brand-dark\/50{background-color:rgb(10 10 15 / 0.5)}.bg-pink-600\/20{background-color:rgb(219 39 119 / 0.2)}.bg-purple-700\/20{background-color:rgb(126 34 206 / 0.2)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-brand-card{background-color:rgba(255, 255, 255, 0.03)}.bg-pink-500{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-pink-400{--tw-gradient-from:#f472b6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(244 114 182 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-500\/20{--tw-gradient-from:rgb(236 72 153 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-card{--tw-gradient-from:rgba(255, 255, 255, 0.03) var(--tw-gradient-from-position);--tw-gradient-to:rgba(255, 255, 255, 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-500{--tw-gradient-from:#ec4899 var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-600{--tw-gradient-from:#db2777 var(--tw-gradient-from-position);--tw-gradient-to:rgb(219 39 119 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-purple-400{--tw-gradient-to:rgb(192 132 252 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #c084fc var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-white\/20{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(255 255 255 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-indigo-400{--tw-gradient-to:#818cf8 var(--tw-gradient-to-position)}.to-purple-600\/20{--tw-gradient-to:rgb(147 51 234 / 0.2) var(--tw-gradient-to-position)}.to-black\/60{--tw-gradient-to:rgb(0 0 0 / 0.6) var(--tw-gradient-to-position)}.to-indigo-500{--tw-gradient-to:#6366f1 var(--tw-gradient-to-position)}.to-purple-400{--tw-gradient-to:#c084fc var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.to-rose-500{--tw-gradient-to:#f43f5e var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-1{padding:0.25rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.pb-4{padding-bottom:1rem}.pr-2{padding-right:0.5rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-\[11px\]{font-size:11px}.font-bold{font-weight:700}.font-semibold{font-weight:600}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-pink-300{--tw-text-opacity:1;color:rgb(249 168 212 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-green-300{--tw-text-opacity:1;color:rgb(134 239 172 / var(--tw-text-opacity, 1))}.text-pink-100\/80{color:rgb(252 231 243 / 0.8)}.text-purple-100\/80{color:rgb(243 232 255 / 0.8)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity, 1))}.placeholder-gray-600::placeholder{--tw-placeholder-opacity:1;color:rgb(75 85 99 / var(--tw-placeholder-opacity, 1))}.opacity-70{opacity:0.7}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-pink-500\/30{--tw-shadow-color:rgb(236 72 153 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-purple-500\/30{--tw-shadow-color:rgb(168 85 247 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-pink-500\/20{--tw-shadow-color:rgb(236 72 153 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-purple-500\/10{--tw-shadow-color:rgb(168 85 247 / 0.1);--tw-shadow:var(--tw-shadow-colored)}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-pink-500 *::selection{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-pink-500::selection{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.empty\:hidden:empty{display:none}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-pink-500\/30:hover{border-color:rgb(236 72 153 / 0.3)}.hover\:border-purple-500\/30:hover{border-color:rgb(168 85 247 / 0.3)}.hover\:shadow-\[0_0_30px_rgba\(217\2c 70\2c 239\2c 0\.4\)\]:hover{--tw-shadow:0 0 30px rgba(217,70,239,0.4);--tw-shadow-colored:0 0 30px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-pink-500:focus{--tw-border-opacity:1;border-color:rgb(236 72 153 / var(--tw-border-opacity, 1))}.focus\:border-purple-500:focus{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-pink-500\/50:focus{--tw-ring-color:rgb(236 72 153 / 0.5)}.focus\:ring-purple-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(168 85 247 / var(--tw-ring-opacity, 1))}.focus\:ring-purple-500\/50:focus{--tw-ring-color:rgb(168 85 247 / 0.5)}.focus\:ring-offset-2:focus{--tw-ring-offset-width:2px}.focus\:ring-offset-\[\#0a0a0f\]:focus{--tw-ring-offset-color:#0a0a0f}@keyframes spin{to{transform:rotate(360deg)}}.group:hover .group-hover\:animate-spin{animation:spin 1s linear infinite}@media (min-width: 768px){.md\:max-w-\[70\%\]{max-width:70%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:p-8{padding:2rem}.md\:py-20{padding-top:5rem;padding-bottom:5rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style></head>
+</head>
 <body class="min-h-screen relative overflow-x-hidden selection:bg-pink-500 selection:text-white">
 
   <!-- Background Ambient Gradients -->
@@ -86,7 +93,7 @@
   </div>
 
   <div class="max-w-5xl mx-auto px-4 py-12 md:py-20">
-    
+
     <!-- Header -->
     <header class="text-center mb-12">
       <div class="inline-block mb-4 p-1 rounded-full bg-gradient-to-r from-pink-500/20 to-purple-600/20 border border-white/10 backdrop-blur-md">
@@ -98,87 +105,30 @@
         </span>
       </h1>
       <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-        Paste the LinkedIn and Instagram links for two people. Each gets an AI agent built from their public profiles, the two agents go on a date, then you see the result.
+        Each person gets an AI agent built from their public LinkedIn and Instagram profiles. The two agents go on a date — here's a completed example.
       </p>
     </header>
 
-    <!-- CHANGE THIS to your deployed Render backend URL -->
-    <script>const BACKEND_URL = "https://theagenticengineer-challenge.onrender.com";</script>
-
-    <!-- Form Section -->
-    <form id="compatForm" class="mb-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        
-        <!-- Person A Card -->
-        <div class="bg-brand-card backdrop-blur-xl border border-brand-border rounded-2xl p-6 md:p-8 neon-shadow transition-all duration-300 hover:border-pink-500/30">
-          <div class="flex items-center mb-6">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-white font-bold text-xl mr-4 shadow-lg shadow-pink-500/30">A</div>
-            <h3 class="text-2xl font-semibold text-white">Person A</h3>
-          </div>
-          
-          <div class="space-y-5">
-            <div>
-              <label class="block text-sm font-medium text-gray-300 mb-2">LinkedIn URL</label>
-              <input type="url" id="linkedinA" required="" placeholder="https://linkedin.com/in/..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all">
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-300 mb-2">Instagram URL</label>
-              <input type="url" id="instagramA" required="" placeholder="https://instagram.com/..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all">
-            </div>
-          </div>
-        </div>
-
-        <!-- Person B Card -->
-        <div class="bg-brand-card backdrop-blur-xl border border-brand-border rounded-2xl p-6 md:p-8 neon-shadow transition-all duration-300 hover:border-purple-500/30">
-          <div class="flex items-center mb-6">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-white font-bold text-xl mr-4 shadow-lg shadow-purple-500/30">B</div>
-            <h3 class="text-2xl font-semibold text-white">Person B</h3>
-          </div>
-          
-          <div class="space-y-5">
-            <div>
-              <label class="block text-sm font-medium text-gray-300 mb-2">LinkedIn URL</label>
-              <input type="url" id="linkedinB" required="" placeholder="https://linkedin.com/in/..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all">
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-300 mb-2">Instagram URL</label>
-              <input type="url" id="instagramB" required="" placeholder="https://instagram.com/..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Submit Button -->
-      <div class="flex justify-center">
-        <button type="submit" class="group relative px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full font-semibold text-lg text-white transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(217,70,239,0.4)] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a0a0f]">
-          <span class="flex items-center gap-2">
-            <svg class="w-5 h-5 group-hover:animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            Check Compatibility
-          </span>
-        </button>
-      </div>
-    </form>
-
     <!-- Status Indicator -->
     <div class="flex justify-center mb-10">
-      <p id="status" class="text-center font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 empty:hidden py-2 px-6 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">Match analysis complete!</p>
+      <p id="status" class="text-center font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 py-2 px-6 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">Match analysis complete!</p>
     </div>
 
     <!-- Profiles Section -->
-    <div id="profilesSection" style="display: block;" class="mb-12 animate-[fadeIn_0.5s_ease-out]">
+    <div id="profilesSection" class="mb-12 animate-[fadeIn_0.5s_ease-out]">
       <div class="flex items-center gap-4 mb-6">
         <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
         <h2 class="text-2xl font-bold text-white text-center">Extracted Profiles</h2>
         <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
       </div>
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="bg-black/60 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md flex flex-col">
           <div class="bg-white/5 px-4 py-3 border-b border-white/10 flex items-center gap-2">
             <div class="w-3 h-3 rounded-full bg-pink-500"></div>
             <h3 class="font-mono text-sm text-gray-300">Profile_A.json</h3>
           </div>
-          <pre id="profileAOutput" class="p-4 text-xs md:text-sm font-mono text-pink-100/80 overflow-x-auto max-h-96">{
+          <pre class="p-4 text-xs md:text-sm font-mono text-pink-100/80 overflow-x-auto max-h-96">{
   "name": "Bill Gates",
   "summary": "Bill Gates is a philanthropist and technologist currently serving as Co-chair of the Gates Foundation and Founder of Breakthrough Energy. His recent public focus is heavily centered on the ethical development and equitable distribution of Artificial Intelligence.",
   "hobbies": [
@@ -230,7 +180,7 @@
     {
       "claim": "Values equity and human-centered relationships in technology use.",
       "source": "instagram",
-      "detail": "Caption states: 'people and relationships must remain at the center of how we use AI' and 'AI could be a great equalizer, but only if it’s built to benefit the people who need it most.'"
+      "detail": "Caption states: 'people and relationships must remain at the center of how we use AI' and 'AI could be a great equalizer, but only if it's built to benefit the people who need it most.'"
     },
     {
       "claim": "Engaged in high-level international diplomacy and global health initiatives.",
@@ -240,12 +190,12 @@
     {
       "claim": "Interested in specific health issues like Alzheimer's.",
       "source": "instagram",
-      "detail": "Caption mentions 'Seth Rogen and Lauren Miller Rogen founded Hilarity for Charity to make sure no one has to care for a loved one with Alzheimer’s alone.'"
+      "detail": "Caption mentions 'Seth Rogen and Lauren Miller Rogen founded Hilarity for Charity to make sure no one has to care for a loved one with Alzheimer's alone.'"
     },
     {
       "claim": "Personality is collaborative and advocacy-driven.",
       "source": "instagram",
-      "detail": "Posts emphasize 'joining a coalition of organizations' and 'building on the incredible progress we’re making' together."
+      "detail": "Posts emphasize 'joining a coalition of organizations' and 'building on the incredible progress we're making' together."
     }
   ],
   "location": "Seattle",
@@ -259,7 +209,7 @@
             <div class="w-3 h-3 rounded-full bg-purple-500"></div>
             <h3 class="font-mono text-sm text-gray-300">Profile_B.json</h3>
           </div>
-          <pre id="profileBOutput" class="p-4 text-xs md:text-sm font-mono text-purple-100/80 overflow-x-auto max-h-96">{
+          <pre class="p-4 text-xs md:text-sm font-mono text-purple-100/80 overflow-x-auto max-h-96">{
   "name": "Richard Branson",
   "summary": "Richard Branson is a prominent entrepreneur and founder of the Virgin Group, known for his ventures in aviation, music, and hospitality. He is also an active advocate for environmental sustainability and social causes, frequently sharing personal reflections and business insights with a large social media following.",
   "hobbies": [
@@ -306,7 +256,7 @@
     {
       "claim": "He values environmental sustainability.",
       "source": "instagram",
-      "detail": "Caption: 'We give ourselves health checks. Our planet deserves one too... joined the Planetary Guardians... to launch the 202[4] [Climate Week event].'"
+      "detail": "Caption: 'We give ourselves health checks. Our planet deserves one too... joined the Planetary Guardians... to launch the Climate Week event.'"
     },
     {
       "claim": "He is involved in social causes and education.",
@@ -316,12 +266,12 @@
     {
       "claim": "His personality is characterized by risk-taking and optimism.",
       "source": "instagram",
-      "detail": "Bio: 'Screw it, let’s do it.' and Caption: 'Saying 'yes‘ has changed my life... The best things in my life began before I knew what I was doing.'"
+      "detail": "Bio: 'Screw it, let's do it.' and Caption: 'Saying 'yes' has changed my life... The best things in my life began before I knew what I was doing.'"
     },
     {
       "claim": "He values personal relationships and family.",
       "source": "instagram",
-      "detail": "Caption: 'So touching to see @VirginAtlantic’s new plane paying tribute to my wonderful wife, Joan.'"
+      "detail": "Caption: 'So touching to see @VirginAtlantic's new plane paying tribute to my wonderful wife, Joan.'"
     },
     {
       "claim": "He has a significant public profile and influence.",
@@ -338,7 +288,7 @@
     </div>
 
     <!-- Date Transcript Section -->
-    <div id="dateSection" style="display: block;" class="mb-12 animate-[fadeIn_0.5s_ease-out]">
+    <div id="dateSection" class="mb-12 animate-[fadeIn_0.5s_ease-out]">
       <div class="flex items-center gap-4 mb-6">
         <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
         <h2 class="text-2xl md:text-3xl font-bold text-white text-center flex items-center gap-3">
@@ -346,68 +296,81 @@
         </h2>
         <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
       </div>
-      
+
       <div class="bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl p-4 md:p-8 neon-shadow max-w-4xl mx-auto">
-        <!-- The transcript gets injected here -->
-        <div id="transcriptOutput" class="flex flex-col space-y-4 max-h-[600px] overflow-y-auto pr-2 pb-4"><div class="flex w-full justify-start"><div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20">
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            A
+        <div class="flex flex-col space-y-4 max-h-[600px] overflow-y-auto pr-2 pb-4">
+
+          <div class="flex w-full justify-start">
+            <div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20">
+              <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">A</div>
+              <div class="text-sm md:text-base leading-relaxed">
+                Bill: I'm excited to hear about your latest Virgin ventures—especially the new eco-friendly cruise line. I've been working on multilingual AI tools that could help onboard guests with real-time language support.
+              </div>
+            </div>
           </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            Bill: I’m excited to hear about your latest Virgin ventures—especially the new eco-friendly cruise line. I’ve been working on multilingual AI tools that could help onboard guests with real-time language support.
+
+          <div class="flex w-full justify-end">
+            <div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10">
+              <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">B</div>
+              <div class="text-sm md:text-base leading-relaxed">
+                Richard: That sounds incredible! We're always looking for tech that enhances sustainability. I'd love to explore how AI could improve energy efficiency on our ships.
+              </div>
+            </div>
           </div>
-        </div></div><div class="flex w-full justify-end"><div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10">
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            B
+
+          <div class="flex w-full justify-start">
+            <div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20">
+              <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">A</div>
+              <div class="text-sm md:text-base leading-relaxed">
+                Bill: Absolutely, and I'm keen on ensuring the tech is equitable—so it benefits all crew and passengers, not just the elite.
+              </div>
+            </div>
           </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            Richard: That sounds incredible! We’re always looking for tech that enhances sustainability. I’d love to explore how AI could improve energy efficiency on our ships.
+
+          <div class="flex w-full justify-end">
+            <div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10">
+              <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">B</div>
+              <div class="text-sm md:text-base leading-relaxed">
+                Richard: Equity is key. I've been building schools in Kenya; perhaps we could integrate AI tutoring to expand access to education there.
+              </div>
+            </div>
           </div>
-        </div></div><div class="flex w-full justify-start"><div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20">
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            A
+
+          <div class="flex w-full justify-start">
+            <div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20">
+              <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">A</div>
+              <div class="text-sm md:text-base leading-relaxed">
+                Bill: That aligns with my focus on global health and education. A joint initiative could bring digital tools to remote classrooms.
+              </div>
+            </div>
           </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            Bill: Absolutely, and I’m keen on ensuring the tech is equitable—so it benefits all crew and passengers, not just the elite.
+
+          <div class="flex w-full justify-end">
+            <div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10">
+              <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">B</div>
+              <div class="text-sm md:text-base leading-relaxed">
+                Richard: Let's set up a collaboration—combining adventure, climate action, and tech to make a lasting impact.
+              </div>
+            </div>
           </div>
-        </div></div><div class="flex w-full justify-end"><div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10">
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            B
-          </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            Richard: Equity is key. I’ve been building schools in Kenya; perhaps we could integrate AI tutoring to expand access to education there.
-          </div>
-        </div></div><div class="flex w-full justify-start"><div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20">
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            A
-          </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            Bill: That aligns with my focus on global health and education. A joint initiative could bring digital tools to remote classrooms.
-          </div>
-        </div></div><div class="flex w-full justify-end"><div class="max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10">
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            B
-          </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            Richard: Let’s set up a collaboration—combining adventure, climate action, and tech to make a lasting impact.
-          </div>
-        </div></div></div>
+
+        </div>
       </div>
     </div>
 
     <!-- Compatibility Result Section -->
-    <div id="resultSection" style="display: block;" class="mb-20 animate-[fadeIn_0.5s_ease-out]">
+    <div id="resultSection" class="mb-20 animate-[fadeIn_0.5s_ease-out]">
       <div class="flex items-center gap-4 mb-6">
         <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
         <h2 class="text-2xl font-bold text-white text-center">Compatibility Verdict</h2>
         <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
       </div>
-      
+
       <div class="bg-gradient-to-br from-brand-card to-black/60 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-xl max-w-2xl mx-auto shadow-2xl">
         <div class="bg-gradient-to-r from-pink-500/20 to-purple-600/20 px-6 py-4 border-b border-white/10">
           <h3 class="font-mono text-sm text-gray-200 text-center uppercase tracking-widest">Final Analysis</h3>
         </div>
-        <pre id="resultOutput" class="p-6 text-sm md:text-base font-mono text-green-300 overflow-x-auto whitespace-pre-wrap">{
+        <pre class="p-6 text-sm md:text-base font-mono text-green-300 overflow-x-auto whitespace-pre-wrap">{
   "final_score": 13.2,
   "same_city": false,
   "verdict_a_about_b": {
@@ -447,151 +410,5 @@
     </div>
 
   </div>
-
-  <script>
-    const statusEl = document.getElementById("status");
-    const form = document.getElementById("compatForm");
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      statusEl.textContent = "Initiating matching sequence...";
-      statusEl.classList.add("animate-pulse"); // Add a subtle pulse effect while working
-      
-      document.getElementById("profilesSection").style.display = "none";
-      document.getElementById("dateSection").style.display = "none";
-      document.getElementById("resultSection").style.display = "none";
-
-      const body = {
-        linkedin_url_a: document.getElementById("linkedinA").value,
-        instagram_url_a: document.getElementById("instagramA").value,
-        linkedin_url_b: document.getElementById("linkedinB").value,
-        instagram_url_b: document.getElementById("instagramB").value,
-      };
-
-      try {
-        const res = await fetch(`${BACKEND_URL}/api/compatibility`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
-        });
-
-        if (!res.ok) {
-          statusEl.textContent = "Error submitting. Check the URLs are valid.";
-          statusEl.classList.remove("animate-pulse");
-          return;
-        }
-
-        const { job_id } = await res.json();
-        pollJob(job_id);
-      } catch (err) {
-        statusEl.textContent = "Network error. Make sure the backend is running.";
-        statusEl.classList.remove("animate-pulse");
-      }
-    });
-
-    async function pollJob(jobId) {
-      const interval = setInterval(async () => {
-        try {
-          const res = await fetch(`${BACKEND_URL}/api/jobs/${jobId}`);
-          const job = await res.json();
-
-          if (job.status === "scraping") statusEl.textContent = "Scraping digital footprints (LinkedIn + Instagram)...";
-          if (job.status === "analyzing") statusEl.textContent = "Synthesizing AI personas from profile data...";
-          if (job.status === "dating") {
-            statusEl.textContent = "Personas constructed. The date is happening right now...";
-            if (job.profile_a && job.profile_b) showProfiles(job.profile_a, job.profile_b);
-          }
-
-          if (job.status === "done") {
-            clearInterval(interval);
-            statusEl.textContent = "Match analysis complete!";
-            statusEl.classList.remove("animate-pulse");
-            showProfiles(job.profile_a, job.profile_b);
-            showDate(job.result);
-          }
-
-          if (job.status === "error") {
-            clearInterval(interval);
-            statusEl.textContent = "Error during execution: " + job.error;
-            statusEl.classList.remove("animate-pulse");
-          }
-        } catch(err) {
-          // Silent catch for polling temporary network hiccups
-        }
-      }, 2000);
-    }
-
-    function showProfiles(a, b) {
-      document.getElementById("profilesSection").style.display = "block";
-      document.getElementById("profileAOutput").textContent = JSON.stringify(a, null, 2);
-      document.getElementById("profileBOutput").textContent = JSON.stringify(b, null, 2);
-    }
-
-    function showDate(result) {
-      document.getElementById("dateSection").style.display = "block";
-      const container = document.getElementById("transcriptOutput");
-      container.innerHTML = "";
-      
-      // Variable to keep track of speaker alternating for UI layout
-      let previousSpeaker = null;
-      let isLeftAlignment = true; // A = left, B = right layout logic
-
-      result.transcript.forEach((line) => {
-        // Detect speaker changes to alternate left/right bubble alignments
-        if (previousSpeaker !== line.speaker) {
-          if (previousSpeaker !== null) {
-            isLeftAlignment = !isLeftAlignment;
-          }
-          previousSpeaker = line.speaker;
-        }
-
-        // Creating the container for alignment
-        const wrapper = document.createElement("div");
-        wrapper.className = `flex w-full ${isLeftAlignment ? 'justify-start' : 'justify-end'}`;
-
-        // Creating the chat bubble
-        const bubble = document.createElement("div");
-        bubble.className = `max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative ${
-          isLeftAlignment
-            ? 'bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20'
-            : 'bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10'
-        }`;
-        
-        // Formulate internal HTML keeping identical textual output context
-        bubble.innerHTML = `
-          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
-            ${line.speaker}
-          </div>
-          <div class="text-sm md:text-base leading-relaxed">
-            ${line.text}
-          </div>
-        `;
-        
-        wrapper.appendChild(bubble);
-        container.appendChild(wrapper);
-      });
-
-      // Auto-scroll to bottom of the chat smoothly
-      setTimeout(() => {
-        container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
-      }, 100);
-
-      document.getElementById("resultSection").style.display = "block";
-      document.getElementById("resultOutput").textContent = JSON.stringify({
-        final_score: result.final_score,
-        same_city: result.same_city,
-        verdict_a_about_b: result.verdict_a_about_b,
-        verdict_b_about_a: result.verdict_b_about_a,
-      }, null, 2);
-    }
-  </script>
-
-  <style>
-    /* Simple fade in animation for sections */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-
-</body></html>
+</body>
+</html>
